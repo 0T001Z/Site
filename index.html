@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facebook – entre ou cadastre-se</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      text-align: center;
+    }
+
+    .login-box {
+      background: #fff;
+      padding: 20px 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 360px;
+    }
+
+    .login-box h2 {
+      color: #1877f2;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 14px;
+      margin-bottom: 10px;
+      border: 1px solid #dddfe2;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button[type="submit"] {
+      padding: 12px;
+      background-color: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 18px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #166fe5;
+    }
+
+    .login-box a {
+      display: block;
+      color: #1877f2;
+      text-decoration: none;
+      font-size: 14px;
+      margin: 12px 0;
+    }
+
+    .create-account {
+      margin-top: 20px;
+      background-color: #42b72a;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .create-account:hover {
+      background-color: #36a420;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h2>facebook</h2>
+      <form onsubmit="event.preventDefault(); window.location.href='claro.html'">
+        <input type="text" placeholder="Email ou telefone" required />
+        <input type="password" placeholder="Senha" required />
+        <button type="submit">Entrar</button>
+        <a href="#">Esqueceu a senha?</a>
+        <button type="button" class="create-account" onclick="window.location.href='claro.html'">Criar nova conta</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

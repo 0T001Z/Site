@@ -1,0 +1,173 @@
+/* Reset de Estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilo para o Cabeçalho */
+.header-claro {
+  background-color: #e60000;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-claro .logo img {
+  width: 120px;
+}
+
+.nav-claro ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-claro li {
+  margin-left: 20px;
+}
+
+.nav-claro a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-claro a:hover {
+  color: #ffb300;
+}
+
+/* Estilo para o conteúdo principal */
+.main-content {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recarga-section {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.recarga-section h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.recarga-section .descricao {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.recarga-card {
+  background-color: #e9e9e9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.recarga-card h2 {
+  color: #e60000;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.recarga-card .detalhes-recarga {
+  color: #777;
+  font-size: 14px;
+}
+
+.btn-recarregar {
+  background-color: #e60000;
+  color: white;
+  font-weight: bold;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn-recarregar:hover {
+  background-color: #cc0000;
+}
+
+/* Formulário de Recarga */
+.recarga-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recarga-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.recarga-form input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.recarga-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #e60000;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.recarga-form button:hover {
+  background-color: #cc0000;
+}
+
+/* Rodapé */
+.footer-claro {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .header-claro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-claro ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  .nav-claro li {
+    margin: 5px 0;
+  }
+}
